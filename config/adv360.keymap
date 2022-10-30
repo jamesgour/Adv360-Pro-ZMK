@@ -38,6 +38,70 @@
         compatible = "zmk,behavior-mod-morph";
         label = "RP_DVORAK_2";
         #binding-cells = <0>;
+        bindings = <&kp LBKT>, <&kp KP_NUMBER_2>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv3: rp_dvorak_3 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_3";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv4: rp_dvorak_4 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_4";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv5: rp_dvorak_5 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_5";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv6: rp_dvorak_6 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_6";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+      
+      rpdv7: rp_dvorak_7 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_7";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv8: rp_dvorak_8 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_8";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv9: rp_dvorak_9 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_9";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv0: rp_dvorak_0 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_0";
+        #binding-cells = <0>;
         bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
       };
@@ -89,8 +153,8 @@
 
     real_programmers_dvorak {
       bindings = <
-        &rpdvequals &rpdv1       &rpdv2       &kp N3     &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7   &kp N8     &kp N9   &kp N0   &kp MINUS
-        &kp TAB     &kp SEMI     &kp COMMA    &kp DOT    &kp P      &kp Y  &tog 0                                                                       &none &kp F  &kp G    &kp C      &kp R    &kp L    &kp BSLH
+        &rpdvequals &rpdv1       &rpdv2       &kp N3     &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp N7   &kp N8     &kp N9   &kp N0   &kp MINUS
+        &kp TAB     &kp SEMI     &kp COMMA    &kp DOT    &kp P      &kp Y  &none                                                                        &none &kp F  &kp G    &kp C      &kp R    &kp L    &kp BSLH
         &kp ESC     &kp A        &kp O        &kp E      &kp U      &kp I  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp D  &kp H    &kp T      &kp N    &kp S    &kp SQT
         &kp LSHFT   &kp APOS     &kp Q        &kp J      &kp K      &kp X         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp B  &kp M    &kp W      &kp V    &kp Z    &kp RSHFT
         &mo 2       &kp DLLR     &kp CAPS     &kp DOWN   &kp UP                   &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp LEFT &kp RIGHT  &kp LBKT &kp RBKT &mo 2
