@@ -70,7 +70,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "RP_DVORAK_6";
         #binding-cells = <0>;
-        bindings = <&kp KP_EQUAL>, <&kp KP_NUMBER_6>;
+        bindings = <&kp KP_EQUAL_AS400>, <&kp KP_NUMBER_6>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
       };
       
