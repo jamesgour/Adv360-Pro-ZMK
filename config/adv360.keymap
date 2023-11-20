@@ -26,6 +26,135 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+      rpdvdollar: rp_dvorak_dollar {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_DOLLAR";
+        #binding-cells = <0>;
+        bindings = <&kp DLLR>, <&kp TILDE>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv1: rp_dvorak_1 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_1";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp KP_NUMBER_1>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv2: rp_dvorak_2 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_2";
+        #binding-cells = <0>;
+        bindings = <&kp LBKT>, <&kp KP_NUMBER_2>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv3: rp_dvorak_3 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_3";
+        #binding-cells = <0>;
+        bindings = <&kp LBRC>, <&kp KP_NUMBER_3>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv4: rp_dvorak_4 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_4";
+        #binding-cells = <0>;
+        bindings = <&kp LPAR>, <&kp KP_NUMBER_4>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv5: rp_dvorak_5 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_5";
+        #binding-cells = <0>;
+        bindings = <&kp AMPS>, <&kp KP_NUMBER_5>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv6: rp_dvorak_6 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_6";
+        #binding-cells = <0>;
+        bindings = <&kp EQUAL>, <&kp KP_NUMBER_6>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+      
+      rpdv7: rp_dvorak_7 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_7";
+        #binding-cells = <0>;
+        bindings = <&kp RPAR>, <&kp KP_NUMBER_7>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv8: rp_dvorak_8 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_8";
+        #binding-cells = <0>;
+        bindings = <&kp RBRC>, <&kp KP_NUMBER_8>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv9: rp_dvorak_9 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_9";
+        #binding-cells = <0>;
+        bindings = <&kp RBKT>, <&kp KP_NUMBER_9>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdv0: rp_dvorak_0 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_0";
+        #binding-cells = <0>;
+        bindings = <&kp STAR>, <&kp KP_NUMBER_0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdvbang: rp_dvorak_bang {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_BANG";
+        #binding-cells = <0>;
+        bindings = <&kp EXCL>, <&kp PRCNT>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdvpipe: rp_dvorak_pipe {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_PIPE";
+        #binding-cells = <0>;
+        bindings = <&kp PIPE>, <&kp GRAVE>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdvfslash: rp_dvorak_fslash {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_FSLASH";
+        #binding-cells = <0>;
+        bindings = <&kp FSLH>, <&kp QMARK>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdvat: rp_dvorak_at {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_AT";
+        #binding-cells = <0>;
+        bindings = <&kp AT>, <&kp CARET>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rpdvbslash: rp_dvorak_bslash {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RP_DVORAK_BSLASH";
+        #binding-cells = <0>;
+        bindings = <&kp BSLH>, <&kp HASH>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
     };
 
   keymap {
