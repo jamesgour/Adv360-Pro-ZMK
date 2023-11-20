@@ -1,4 +1,8 @@
-# Kinesis Advantage 360 Pro ZMK Config (FORK)
+# Kinesis Advantage 360 Pro ZMK Config
+
+## Best GUI
+
+https://nickcoutsos.github.io/keymap-editor/
 
 ## Modifying the keymap
 
@@ -118,4 +122,3 @@ Further support resources can be found on Kinesis.com:
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
 
 - https://kinesis-ergo.com/support/kb360pro/#ticket
-
