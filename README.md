@@ -1,4 +1,4 @@
-# Kinesis Advantage 360 Pro ZMK Config
+# Kinesis Advantage 360 Pro ZMK Config (FORK)
 
 ## Modifying the keymap
 
@@ -26,14 +26,14 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 #### Software
 
-* Either Podman or Docker is required, Podman is chosen if both are installed.
-* Make is also required
+- Either Podman or Docker is required, Podman is chosen if both are installed.
+- Make is also required
 
 #### Windows specific
 
-* If compiling on Windows use WSL2 and Docker [Docker Setup Guide](https://docs.docker.com/desktop/windows/wsl/).
-* Install make using `sudo apt-get install make` inside the WSL2 instance.
-* The repository can be cloned directly into the WSL2 instance or accessed through the C: mount point WSL provides by default (`/mnt/c/path-to-repo`).
+- If compiling on Windows use WSL2 and Docker [Docker Setup Guide](https://docs.docker.com/desktop/windows/wsl/).
+- Install make using `sudo apt-get install make` inside the WSL2 instance.
+- The repository can be cloned directly into the WSL2 instance or accessed through the C: mount point WSL provides by default (`/mnt/c/path-to-repo`).
 
 ### Build firmware
 
@@ -42,7 +42,7 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 ### Cleanup
 
-The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures. 
+The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures.
 
 ## Flashing firmware
 
@@ -62,7 +62,7 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 1. Unplug the right side keyboard and turn it back on.
 1. Enjoy!
 
-> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
+> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14.
 
 > Note: Some operating systems wont always treat the drive as ejected after the settings-reset file is flashed, this doesn't mean that the flashing process has failed.
 
@@ -74,11 +74,11 @@ Updating from V2.0 based firmwares to V3.0 based firmwares can be a rather compl
 
 ## Versioning
 
-Starting on 11/15/2023 the Advantage 360 Pro will now automatically record the compilation date, branch and Git commit hash in a macro that can be accessed with Mod+V. This will type out the following string: YYYYMMDD-XXXX-YYYYYY, where XXXX is the first 4 characters of the Git branch and YYYYYY is the Git commit hash. In addition to this the builds compiled by GitHub actions are now timestamped and also record the commit hash in the filename. 
+Starting on 11/15/2023 the Advantage 360 Pro will now automatically record the compilation date, branch and Git commit hash in a macro that can be accessed with Mod+V. This will type out the following string: YYYYMMDD-XXXX-YYYYYY, where XXXX is the first 4 characters of the Git branch and YYYYYY is the Git commit hash. In addition to this the builds compiled by GitHub actions are now timestamped and also record the commit hash in the filename.
 
 ## Bluetooth LE Privacy
 
-Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the split halves connecting to each other. 
+Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the split halves connecting to each other.
 
 Recent updates to MacOS have improved the behaviour for devices without BLE privacy and caused regressions with privacy enabled (e.g. being unable to enter the password on the filevault screen) so BLE privacy is not necessary any more.
 
@@ -88,7 +88,7 @@ By default this keyboard has NKRO enabled, however for compatibility reasons the
 
 ## Battery reporting
 
-By default reporting the battery level over BLE is disabled as this can cause some computers to spontaneously wake up repeatedly. If you'd like to enable this functionality change `CONFIG_BT_BAS=n` to  `CONFIG_BT_BAS=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L58). Please note that a known bug in windows prevents the battery level from updating by default, it is only updated when the board is paired. A workaround is to set `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig). This may cause unexpected results on other OSes
+By default reporting the battery level over BLE is disabled as this can cause some computers to spontaneously wake up repeatedly. If you'd like to enable this functionality change `CONFIG_BT_BAS=n` to `CONFIG_BT_BAS=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L58). Please note that a known bug in windows prevents the battery level from updating by default, it is only updated when the board is paired. A workaround is to set `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig). This may cause unexpected results on other OSes
 
 ## Changelog
 
@@ -112,8 +112,10 @@ Whilst the Advantage 360 Pro is compatible with base ZMK (The pull request to me
 
 Further support resources can be found on Kinesis.com:
 
-* https://kinesis-ergo.com/support/kb360pro/#firmware-updates
-* https://kinesis-ergo.com/support/kb360pro/#manuals
+- https://kinesis-ergo.com/support/kb360pro/#firmware-updates
+- https://kinesis-ergo.com/support/kb360pro/#manuals
 
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
-* https://kinesis-ergo.com/support/kb360pro/#ticket
+
+- https://kinesis-ergo.com/support/kb360pro/#ticket
+
