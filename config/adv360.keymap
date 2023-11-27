@@ -184,7 +184,7 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3          &kp N4        &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7          &kp N8           &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E           &kp R         &kp T   &tog 4                                                   &none      &kp Y   &kp U           &kp I            &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D           &kp F         &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J           &kp K            &kp L     &kp SEMI  &kp SQT
+&kp ESC    &kp A      &kp S     &kp D           &kp F         &kp G   &none     &kp LCTRL  &kp LALT      &trans     &kp RCTRL  &none      &kp H   &kp J           &kp K            &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C           &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA        &kp DOT   &kp FSLH  &kp RSHFT
 &mo 2      &kp GRAVE  &kp CAPS  &kp DOWN_ARROW  &kp UP_ARROW          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LBKT  &kp RBKT  &mo 2
             >;
@@ -222,14 +222,24 @@
 
         rpdvorak {
             bindings = <
-&rpdvpipe  &rpdv1         &rpdv2        &rpdv3          &rpdv4        &rpdv5  &tog 1                                                                         &mo 3      &rpdv6  &rpdv7          &rpdv8           &rpdv9       &rpdv0   &rpdvbang
-&kp TAB    &kp SEMICOLON  &kp COMMA     &kp DOT         &kp P         &kp Y   &trans                                                                         &trans     &kp F   &kp G           &kp C            &kp R        &kp L    &rpdvbslash
-&kp ESC    &kp A          &kp O         &kp E           &kp U         &kp I   &trans    &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RIGHT_CONTROL  &trans     &kp D   &kp H           &kp T            &kp N        &kp S    &kp MINUS
-&kp LSHFT  &kp SQT        &kp Q         &kp J           &kp K         &kp X                               &kp HOME          &kp PG_UP                                   &kp B   &kp M           &kp W            &kp V        &kp Z    &kp RSHFT
-&mo 2      &rpdvdollar    &kp CAPSLOCK  &kp DOWN_ARROW  &kp UP_ARROW          &kp BSPC  &kp DEL           &kp END           &kp PG_DN     &kp RET            &kp SPACE          &kp LEFT_ARROW  &kp RIGHT_ARROW  &rpdvfslash  &rpdvat  &mo 2
+&rpdvpipe  &rpdv1         &rpdv2        &rpdv3          &rpdv4        &rpdv5  &trans                                                                      &mo 3      &rpdv6  &rpdv7          &rpdv8           &rpdv9       &rpdv0   &rpdvbang
+&kp TAB    &kp SEMICOLON  &kp COMMA     &kp DOT         &kp P         &kp Y   &trans                                                                      &trans     &kp F   &kp G           &kp C            &kp R        &kp L    &rpdvbslash
+&kp ESC    &kp A          &kp O         &kp E           &kp U         &kp I   &trans    &kp LEFT_CONTROL  &kp LEFT_ALT      &trans     &kp RIGHT_CONTROL  &trans     &kp D   &kp H           &kp T            &kp N        &kp S    &kp MINUS
+&kp LSHFT  &kp SQT        &kp Q         &kp J           &kp K         &kp X                               &kp HOME          &kp PG_UP                                &kp B   &kp M           &kp W            &kp V        &kp Z    &kp RSHFT
+&mo 2      &rpdvdollar    &kp CAPSLOCK  &kp DOWN_ARROW  &kp UP_ARROW          &kp BSPC  &kp DEL           &kp END           &kp PG_DN  &kp RET            &kp SPACE          &kp LEFT_ARROW  &kp RIGHT_ARROW  &rpdvfslash  &rpdvat  &mo 2
             >;
 
             label = "Real Programmer Dvorak";
+        };
+
+        shortcuts {
+            bindings = <
+&trans  &kp LG(KP_NUMBER_1)  &kp LG(KP_NUMBER_2)  &kp LG(KP_NUMBER_3)  &kp LG(KP_NUMBER_4)  &kp LG(KP_NUMBER_5)  &trans                                      &trans  &kp LG(KP_NUMBER_6)  &kp LG(KP_NUMBER_7)  &kp LG(KP_NUMBER_8)  &kp LG(KP_NUMBER_9)  &kp LG(KP_NUMBER_0)  &trans
+&trans  &trans               &trans               &trans               &trans               &trans               &trans                                      &trans  &trans               &trans               &trans               &trans               &trans               &trans
+&trans  &trans               &trans               &trans               &trans               &trans               &trans  &trans  &trans      &trans  &trans  &trans  &trans               &trans               &trans               &trans               &trans               &trans
+&trans  &trans               &trans               &trans               &trans               &trans                               &trans      &trans                  &trans               &trans               &trans               &trans               &trans               &trans
+&trans  &trans               &trans               &trans               &trans                                    &trans  &trans  &trans      &trans  &trans  &trans                       &trans               &trans               &trans               &trans               &trans
+            >;
         };
     };
 };
