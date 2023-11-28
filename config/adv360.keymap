@@ -178,11 +178,11 @@
 
         real_programmers_dvorak {
             bindings = <
-&rpdvpipe  &rpdv1       &rpdv2     &rpdv3    &rpdv4  &rpdv5    &tog 2   &mo 4      &rpdv6     &rpdv7     &rpdv8       &rpdv9     &rpdv0     &rpdvbang
-&kp TAB    &kp SEMI     &kp COMMA  &kp DOT   &kp P   &kp Y     &tog 1   &none      &kp F      &kp G      &kp C        &kp R      &kp L      &rpdvbslash
-&kp ESC    &kp A        &kp O      &kp E     &kp U   &kp I     &none    &kp LCTRL  &kp LALT                           &kp LGUI   &kp RCTRL  &none        &kp D    &kp H  &kp T  &kp N  &kp S  &kp MINUS
-&kp LSHFT  &kp APOS     &kp Q      &kp J     &kp K   &kp X     &none    &none      &kp HOME   &none      &none        &kp PG_UP  &none      &none        &kp B    &kp M  &kp W  &kp V  &kp Z  &kp RSHFT
-&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN  &kp UP  &kp BSPC  &kp DEL  &kp END    &kp PG_DN  &kp ENTER  &lt 5 SPACE  &kp LEFT   &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
+&rpdvpipe  &rpdv1       &rpdv2     &rpdv3       &rpdv4       &rpdv5    &tog 2   &mo 4      &rpdv6     &rpdv7     &rpdv8       &rpdv9     &rpdv0     &rpdvbang
+&kp TAB    &kp SEMI     &kp COMMA  &kp DOT      &kp P        &kp Y     &tog 1   &none      &kp F      &kp G      &kp C        &kp R      &kp L      &rpdvbslash
+&kp ESC    &kp A        &kp O      &hm LC(C) E  &hm LC(V) U  &kp I     &none    &kp LCTRL  &kp LALT                           &kp LGUI   &kp RCTRL  &none        &kp D    &kp H  &kp T  &kp N  &kp S  &kp MINUS
+&kp LSHFT  &kp APOS     &kp Q      &kp J        &kp K        &kp X     &none    &none      &kp HOME   &none      &none        &kp PG_UP  &none      &none        &kp B    &kp M  &kp W  &kp V  &kp Z  &kp RSHFT
+&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN     &kp UP       &kp BSPC  &kp DEL  &kp END    &kp PG_DN  &kp ENTER  &lt 5 SPACE  &kp LEFT   &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
             >;
         };
 
@@ -218,11 +218,11 @@
 
         shortcuts {
             bindings = <
-&trans  &kp LG(KP_NUMBER_1)  &kp LG(KP_NUMBER_2)  &kp LG(KP_NUMBER_3)  &kp LG(KP_NUMBER_4)  &kp LG(KP_NUMBER_5)  &trans  &trans  &kp LG(KP_NUMBER_6)  &kp LG(KP_NUMBER_7)  &kp LG(KP_NUMBER_8)  &kp LG(KP_NUMBER_9)  &kp LG(KP_N0)  &trans
-&trans  &trans               &trans               &trans               &trans               &trans               &trans  &trans  &trans               &trans               &trans               &trans               &trans         &trans
-&trans  &trans               &trans               &trans               &trans               &trans               &trans  &trans  &trans                                                         &trans               &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans               &trans               &trans               &trans               &trans  &trans  &trans               &trans               &trans               &trans               &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans               &trans               &trans               &trans               &trans  &trans  &trans               &trans               &trans               &trans               &trans         &trans  &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)  &trans  &trans  &trans                  &trans  &trans  &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
             >;
         };
     };
