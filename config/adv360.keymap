@@ -218,11 +218,11 @@
 
         shortcuts {
             bindings = <
-&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)  &trans  &trans  &trans                  &trans  &trans  &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans
-&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans
-&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &kp C_REWIND  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP  &kp C_FAST_FORWARD  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans
+&trans  &trans        &trans             &trans            &trans           &trans              &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans
+&trans  &kp RA(N1)    &kp RA(N2)         &kp RA(N3)        &kp RA(N4)       &kp RA(N5)          &trans  &trans  &trans                  &trans              &trans               &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans
+&trans  &trans        &trans             &trans            &trans           &trans              &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans  &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &trans        &trans             &trans            &trans           &trans              &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans      &trans
             >;
         };
     };
