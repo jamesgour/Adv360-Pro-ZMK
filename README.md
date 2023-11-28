@@ -3,6 +3,7 @@
 ## Best GUI
 
 https://nickcoutsos.github.io/keymap-editor/
+The ORDER of the layers MATTERS!!
 
 ## Modifying the keymap
 
