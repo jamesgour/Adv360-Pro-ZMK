@@ -220,9 +220,9 @@
             bindings = <
 &trans  &kp C_PREV         &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE   &kp C_VOLUME_UP    &kp C_NEXT         &trans  &trans  &trans             &trans             &trans             &trans             &trans             &trans
 &trans  &kp LC(LS(LA(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))  &trans  &trans  &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(O)))  &kp LS(LA(LC(P)))  &trans
-&trans  &kp F13            &kp F14            &kp F15            &kp F16            &kp F17            &trans  &trans  &trans                                                   &trans             &trans             &trans  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
-&trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans   &trans   &trans   &trans   &trans   &trans
-&trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans   &trans
+&trans  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &trans  &trans  &trans                                                   &trans             &trans             &trans  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(L)))  &kp LS(LA(LC(SEMICOLON)))  &trans
+&trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans             &trans             &trans             &trans             &trans                     &trans
+&trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans  &trans             &trans             &trans             &trans             &trans             &trans  &trans             &trans
             >;
         };
     };
