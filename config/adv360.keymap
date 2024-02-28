@@ -12,7 +12,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -168,11 +168,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &tog 2   &mo 4      &kp N6     &kp N7     &kp N8       &kp N9        &kp N0     &kp MINUS
-&kp TAB    &kp Q        &kp W        &kp E        &kp R        &kp T            &tog 1   &none      &kp Y      &kp U      &kp I        &kp O         &kp P      &kp BSLH
-&kp ESC    &hm LC(Z) A  &hm LC(X) S  &hm LC(C) D  &hm LC(V) F  &hm LS(LG(S)) G  &none    &kp LCTRL  &kp LALT                           &kp LEFT_GUI  &kp RCTRL  &none      &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C        &kp V        &kp B            &none    &none      &kp HOME   &none      &none        &kp PG_UP     &none      &none      &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE    &kp CAPS     &kp DOWN     &kp UP       &kp BSPC         &kp DEL  &kp END    &kp PG_DN  &kp ENTER  &lt 5 SPACE  &kp LEFT      &kp RIGHT  &kp LBKT   &kp RBKT  &mo 3
+&kp EQUAL  &kp N1     &kp N2       &kp N3       &kp N4       &kp N5           &tog 2   &mo 4      &kp N6     &kp N7     &kp N8       &kp N9        &kp N0     &kp MINUS
+&kp TAB    &kp Q      &kp W        &kp E        &kp R        &kp T            &tog 1   &none      &kp Y      &kp U      &kp I        &kp O         &kp P      &kp BSLH
+&kp ESC    &kp A      &hm LC(X) S  &hm LC(C) D  &hm LC(V) F  &hm LS(LG(S)) G  &none    &kp LCTRL  &kp LALT                           &kp LEFT_GUI  &kp RCTRL  &none      &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X        &kp C        &kp V        &kp B            &none    &none      &kp HOME   &none      &none        &kp PG_UP     &none      &none      &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&mo 3      &kp GRAVE  &kp CAPS     &kp DOWN     &kp UP       &kp BSPC         &kp DEL  &kp END    &kp PG_DN  &kp ENTER  &lt 5 SPACE  &kp LEFT      &kp RIGHT  &kp LBKT   &kp RBKT  &mo 3
             >;
         };
 
@@ -180,7 +180,7 @@
             bindings = <
 &rpdvpipe  &rpdv1       &rpdv2       &rpdv3       &rpdv4       &rpdv5           &tog 2   &mo 4      &rpdv6     &rpdv7     &rpdv8       &rpdv9     &rpdv0     &rpdvbang
 &kp TAB    &kp SEMI     &kp COMMA    &kp DOT      &kp P        &kp Y            &tog 1   &none      &kp F      &kp G      &kp C        &kp R      &kp L      &rpdvbslash
-&kp ESC    &hm LC(Z) A  &hm LC(X) O  &hm LC(C) E  &hm LC(V) U  &hm LS(LG(S)) I  &none    &kp LCTRL  &kp LALT                           &kp LGUI   &kp RCTRL  &none        &kp D    &kp H  &kp T  &kp N  &kp S  &kp MINUS
+&kp ESC    &kp A        &hm LC(X) O  &hm LC(C) E  &hm LC(V) U  &hm LS(LG(S)) I  &none    &kp LCTRL  &kp LALT                           &kp LGUI   &kp RCTRL  &none        &kp D    &kp H  &kp T  &kp N  &kp S  &kp MINUS
 &kp LSHFT  &kp APOS     &kp Q        &kp J        &kp K        &kp X            &none    &none      &kp HOME   &none      &none        &kp PG_UP  &none      &none        &kp B    &kp M  &kp W  &kp V  &kp Z  &kp RSHFT
 &mo 3      &rpdvdollar  &kp CAPS     &kp DOWN     &kp UP       &kp BSPC         &kp DEL  &kp END    &kp PG_DN  &kp ENTER  &lt 5 SPACE  &kp LEFT   &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
             >;
