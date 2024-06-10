@@ -23,7 +23,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <248>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -172,17 +172,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        hm: hm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            require-prior-idle-ms = <175>;
-            flavor = "tap-preferred";
-        };
     };
 
     macros {
@@ -204,8 +193,8 @@
         REAL_PROGRAMMERS_DVORAK {
             bindings = <
 &rpdvpipe  &rpdv1       &rpdv2       &rpdv3       &rpdv4       &rpdv5           &tog 2                                                   &mo 4        &rpdv6  &rpdv7    &rpdv8     &rpdv9       &rpdv0   &rpdvbang
-&kp TAB    &kp SEMI     &kp COMMA    &kp DOT      &kp P        &kp Y            &tog 1                                                   &trans       &kp F   &kp G     &kp C      &kp R        &kp L    &rpdvbslash
-&kp ESC    &kp A        &hm LC(X) O  &hm LC(C) E  &hm LC(V) U  &hm LS(LG(S)) I  &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans       &kp D   &kp H     &kp T      &kp N        &kp S    &kp MINUS
+&kp TAB    &kp SEMI     &kp COMMA    &kp DOT      &kp P        &kp Y            &tog 1                                                   &none        &kp F   &kp G     &kp C      &kp R        &kp L    &rpdvbslash
+&kp ESC    &kp A        &hm LC(X) O  &hm LC(C) E  &hm LC(V) U  &hm LS(LG(S)) I  &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp D   &kp H     &kp T      &kp N        &kp S    &kp MINUS
 &kp LSHFT  &kp APOS     &kp Q        &kp J        &kp K        &kp X                                 &kp HOME      &kp PG_UP                          &kp B   &kp M     &kp W      &kp V        &kp Z    &kp RSHFT
 &mo 3      &rpdvdollar  &kp CAPS     &kp DOWN     &kp UP                        &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp LEFT  &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
             >;
