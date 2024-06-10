@@ -59,7 +59,7 @@
         rpdv3: rpdv3 {
             compatible = "zmk,behavior-mod-morph";
             label = "RPDV3";
-            bindings = <&kp LBRC>, <&kp RS(KP_NUMBER_3)>;
+            bindings = <&kp LBRC>, <&kp KP_NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -104,7 +104,7 @@
         rpdv8: rpdv8 {
             compatible = "zmk,behavior-mod-morph";
             label = "RPDV8";
-            bindings = <&kp RBRC>, <&kp LS(KP_NUMBER_8)>;
+            bindings = <&kp RBRC>, <&kp KP_NUMBER_8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -167,7 +167,7 @@
         rpdvbslash: rpdvbslash {
             compatible = "zmk,behavior-mod-morph";
             label = "RPDVBSLASH";
-            bindings = <&kp BSLH>, <&none>;
+            bindings = <&kp BSLH>, <&kp HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
