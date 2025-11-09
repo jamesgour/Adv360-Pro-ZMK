@@ -18,6 +18,18 @@
         };
 
         #endif
+        
+        f24_mod: f24_mod {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;               // takes 1 argument: the keycode
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <
+                &macro-press   &kp F24          // press F24
+                &kp            %0               // %0 = the passed key
+                &macro-release &kp F24          // release F24
+            >;
+        };
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -214,7 +226,7 @@
             bindings = <
 &kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 2                                      &mo 4   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
 &trans   &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &f24_mod A  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
 &trans   &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
 &trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
