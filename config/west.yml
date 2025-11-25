@@ -13,6 +13,6 @@ manifest:
       import: app/west.yml
     - name: zmk-leader-key
       remote: urob
-      revision: adv360-z3.5-2 # set to same as ZMK version above
+      revision: v0.3
   self:
     path: config
