@@ -45,17 +45,6 @@
                 <&kp MACRO_PLACEHOLDER>;
         };
 
-        /* Escape Combo (ht in Dvorak) */
-        esc_combo: esc_combo {
-            compatible = "zmk,behavior-combo";
-            label = "ESC_COMBO";
-            bindings = <&kp ESC>;
-            #binding-cells = <0>;
-            require-prior-idle-ms = <150>;
-            combo-key-positions = <36 37>;
-            tapping-term-ms = <50>;
-        };
-
         /* Urob's Timeless Homerow Mods */
         /* https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods */
 
@@ -63,7 +52,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
@@ -77,7 +66,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
