@@ -24,8 +24,9 @@
             bindings = <&kp RET>;
         };
 
-        #endif = /* Mod Combo (to use e.g. F13-F24 as modifiers) */;
+        #endif
 
+        /* Mod Combo (to use e.g. F13-F24 as modifiers) */
         mod_combo: mod_combo {
             compatible = "zmk,behavior-macro-two-param";
             label = "MOD_COMBO";
@@ -227,10 +228,25 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <45 46>;
+            key-positions = <49 50>;
             bindings = <&kp ESC>;
             layers = <0 1>;
         };
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <49 65>;
+            bindings = <&kp LC(C)>;
+            layers = <0 1>;
+        };
+
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <50 65>;
+            bindings = <&kp LC(V)>;
+            layers = <0 1>;
+        };
+
     };
 
     macros {
