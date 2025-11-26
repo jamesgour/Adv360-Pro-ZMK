@@ -6,14 +6,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 /* DEFINES FOR ADV360 KEY POSITIONS */
+
 #define KEYS_L 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 52 60 61 62 63 64
 #define KEYS_R 7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 36 37 38 39 40 41 53 54 55 56 57 58 59 71 72 73 74 75
 #define THUMBS 65 66 67 68 69 70
 
-
 / {
     behaviors {
-      #include "macros.dtsi"
+        #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
@@ -56,6 +56,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
@@ -69,6 +70,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
@@ -236,27 +238,27 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4             &kp N5  &tog 2                                                          &mo 4        &kp N6  &kp N7              &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R              &kp T   &tog 1                                                          &none        &kp Y   &kp U               &kp I      &kp O     &kp P     &kp BSLH
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4        &kp N5  &tog 2                                                          &mo 4        &kp N6  &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R         &kp T   &tog 1                                                          &none        &kp Y   &kp U         &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &hml LSHFT F  &kp G   &kp F23          &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F24      &kp H   &hmr RSHFT J  &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V              &kp B                               &kp HOME      &kp PG_UP                          &kp N   &kp M               &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP                     &lt 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp LEFT            &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V         &kp B                               &kp HOME      &kp PG_UP                          &kp N   &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP                &lt 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp LEFT      &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
         REAL_PROGRAMMERS_DVORAK {
             bindings = <
-&rpdvpipe  &rpdv1       &rpdv2     &rpdv3    &rpdv4             &rpdv5  &tog 2                                                 &mo 4   &rpdv6  &rpdv7              &rpdv8     &rpdv9       &rpdv0   &rpdvbang
-&kp TAB    &kp SEMI     &kp COMMA  &kp DOT   &kp P              &kp Y   &tog 1                                                 &none   &kp F   &kp G               &kp C      &kp R        &kp L    &rpdvbslash
+&rpdvpipe  &rpdv1       &rpdv2     &rpdv3    &rpdv4        &rpdv5  &tog 2                                                 &mo 4   &rpdv6  &rpdv7        &rpdv8     &rpdv9       &rpdv0   &rpdvbang
+&kp TAB    &kp SEMI     &kp COMMA  &kp DOT   &kp P         &kp Y   &tog 1                                                 &none   &kp F   &kp G         &kp C      &kp R        &kp L    &rpdvbslash
 &kp ESC    &kp A        &kp O      &kp E     &hml LSHFT U  &kp I   &trans  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans  &kp D   &hmr RSHFT H  &kp T      &kp N        &kp S    &kp MINUS
-&kp LSHFT  &kp APOS     &kp Q      &kp J     &kp K              &kp X                      &kp HOME      &kp PG_UP                     &kp B   &kp M               &kp W      &kp V        &kp Z    &kp RSHFT
-&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN  &kp UP                     &trans  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &trans          &kp LEFT            &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
+&kp LSHFT  &kp APOS     &kp Q      &kp J     &kp K         &kp X                      &kp HOME      &kp PG_UP                     &kp B   &kp M         &kp W      &kp V        &kp Z    &kp RSHFT
+&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN  &kp UP                &trans  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &trans          &kp LEFT      &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
             >;
         };
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&none      &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
@@ -266,11 +268,11 @@
 
         fn {
             bindings = <
-&kp F11  &kp F1    &kp F2            &kp F3  &kp F4  &kp F5  &tog 2                                      &mo 4   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &trans    &trans            &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans    &trans            &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans    &trans            &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans    &trans            &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 2                                      &mo 4   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
