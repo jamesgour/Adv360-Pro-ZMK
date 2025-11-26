@@ -278,13 +278,23 @@
             >;
         };
 
-        SPACE_BKSPACE_HOLD {
+        SPACE_HOLD_LAYER {
             bindings = <
 &trans  &kp C_PREV         &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE   &kp C_VOLUME_UP    &kp C_NEXT         &trans                                      &trans  &trans             &trans             &trans             &trans             &trans                     &trans
 &trans  &trans             &trans             &trans             &trans             &trans             &trans                                      &trans  &trans             &trans             &trans             &trans             &trans                     &trans
 &trans  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(L)))  &kp LS(LA(LC(SEMICOLON)))  &trans
 &trans  &trans             &trans             &trans             &trans             &trans                             &trans      &trans                  &trans             &trans             &trans             &trans             &trans                     &trans
 &trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans                     &trans             &trans             &trans             &trans                     &trans
+            >;
+        };
+
+        ENTER_HOLD_LAYER {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
