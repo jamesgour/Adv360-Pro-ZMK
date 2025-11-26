@@ -263,7 +263,7 @@
             bindings = <
 &kp F11  &kp F1    &kp F2            &kp F3  &kp F4  &kp F5  &tog 2                                      &mo 4   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
 &trans   &trans    &trans            &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &mod_combo F24 S  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans    &trans            &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
 &trans   &trans    &trans            &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
 &trans   &trans    &trans            &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
