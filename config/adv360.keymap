@@ -26,13 +26,6 @@
 
         #endif
 
-        /* Leader 1 */
-        leader1: leader1 {
-            compatible = "zmk,behavior-leader-key";
-            #binding-cells = <0>;
-            l1_us { sequence = <U S>; bindings = <&mod_combo_leader1 U S>; };
-        };
-
         /* Mod Combo (to use e.g. F13-F24 as modifiers) */
         mod_combo: mod_combo {
             compatible = "zmk,behavior-macro-two-param";
@@ -52,8 +45,26 @@
                 <&kp MACRO_PLACEHOLDER>;
         };
 
-        /* F16 Mod Combo (for use with leader1 2 layer sequences) */
-        mod_combo_leader1: mod_combo_leader1 {
+        /* Leader 1 Implementation */
+        /* Leader 1 Key */
+        leader1: leader1 {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            l1_us { sequence = <U S>; bindings = <&leader1_mod_combo U S>; };
+        };
+
+        /* Leader 1 Mod Tap */
+        l1_mt: leader1_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEADER1_MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&leader1>;
+        };
+
+        /* Leader 1 Mod Combo (F16 + up to 2 levels of key sequences)*/
+        leader1_mod_combo: leader1_mod_combo {
             compatible = "zmk,behavior-macro-two-param";
             label = "MOD_COMBO";
             #binding-cells = <2>;
