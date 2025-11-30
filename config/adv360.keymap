@@ -309,11 +309,11 @@
 
         fn {
             bindings = <
-&kp F11  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &tog 2                                      &mo 4   &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &mod_combo F13 Q  &mod_combo F13 W  &mod_combo F13 E  &mod_combo F13 R  &mod_combo F13 T  &none                                       &none   &mod_combo F13 Y  &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans            &trans            &none   &trans  &trans      &trans  &trans  &none   &trans            &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans            &trans                            &trans      &trans                  &trans            &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
+&kp F11     &kp F1            &kp F2             &kp F3            &kp F4            &kp F5            &tog 2                                      &mo 4   &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+&kp C_MUTE  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP   &kp C_NEXT        &none                                       &none   &mod_combo F13 Y  &trans  &trans  &trans  &trans   &trans
+&trans      &mod_combo F13 A  &mod_combo F13 S   &mod_combo F13 D  &mod_combo F13 F  &mod_combo F13 G  &none   &trans  &trans      &trans  &trans  &none   &trans            &trans  &trans  &trans  &trans   &trans
+&trans      &trans            &trans             &trans            &trans            &trans                            &trans      &trans                  &trans            &trans  &trans  &trans  &trans   &trans
+&trans      &trans            &trans             &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
             >;
         };
 
