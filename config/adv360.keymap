@@ -330,13 +330,13 @@
             >;
         };
 
-        fn {
+	fn {
             bindings = <
-&kp F11  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &tog 2                                      &mo 4   &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &mod_combo F13 Q  &mod_combo F13 W  &mod_combo F13 E  &mod_combo F13 R  &mod_combo F13 T  &none                                       &none   &mod_combo F13 Y  &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans            &trans            &none   &trans  &trans      &trans  &trans  &none   &trans            &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans            &trans                            &trans      &trans                  &trans            &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans            &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
+&kp F11     &kp F1            &kp F2             &kp F3            &kp F4            &kp F5            &tog 2                                      &mo 4   &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+&kp C_MUTE  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP   &kp C_NEXT        &none                                       &none   &mod_combo F13 Y  &trans  &trans  &trans  &trans   &trans
+&trans      &mod_combo F13 A  &mod_combo F13 S   &mod_combo F13 D  &mod_combo F13 F  &mod_combo F13 G  &none   &trans  &trans      &trans  &trans  &none   &trans            &trans  &trans  &trans  &trans   &trans
+&trans      &trans            &trans             &trans            &trans            &trans                            &trans      &trans                  &trans            &trans  &trans  &trans  &trans   &trans
+&trans      &trans            &trans             &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -350,13 +350,13 @@
             >;
         };
 
-        SPACE_HOLD_LAYER {
+	SPACE_HOLD_LAYER {
             bindings = <
-&trans  &kp C_PREV         &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE   &kp C_VOLUME_UP    &kp C_NEXT         &trans                                      &trans  &trans             &trans             &trans             &trans             &trans                     &trans
-&trans  &trans             &trans             &trans             &trans             &trans             &trans                                      &trans  &trans             &trans             &trans             &trans             &trans                     &trans
-&trans  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(L)))  &kp LS(LA(LC(SEMICOLON)))  &trans
-&trans  &trans             &trans             &trans             &trans             &trans                             &trans      &trans                  &trans             &trans             &trans             &trans             &trans                     &trans
-&trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans                     &trans             &trans             &trans             &trans                     &trans
+&trans  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP   &kp C_NEXT        &trans                                      &trans  &trans            &trans            &trans                &trans                 &trans                    &trans
+&trans  &mod_combo F14 Q  &mod_combo F14 W   &mod_combo F14 E  &mod_combo F14 R  &mod_combo F14 T  &trans                                      &trans  &mod_combo F14 Y  &mod_combo F14 U  &mod_combo F14 I      &mod_combo F14 O       &mod_combo F14 P          &trans
+&trans  &mod_combo F14 A  &mod_combo F14 S   &mod_combo F14 D  &mod_combo F14 F  &mod_combo F14 G  &trans  &trans  &trans      &trans  &trans  &trans  &mod_combo F14 H  &mod_combo F14 J  &mod_combo F14 K      &mod_combo F14 L       &mod_combo F14 SEMICOLON  &trans
+&trans  &mod_combo F14 Z  &mod_combo F14 X   &mod_combo F14 C  &mod_combo F14 V  &mod_combo F14 B                  &trans      &trans                  &mod_combo F14 N  &mod_combo F14 M  &mod_combo F14 COMMA  &mod_combo F14 PERIOD  &mod_combo F14 SLASH      &trans
+&trans  &trans            &trans             &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans            &trans                &trans                 &trans                    &trans
             >;
         };
 
