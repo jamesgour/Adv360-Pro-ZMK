@@ -345,11 +345,11 @@
 
         REAL_PROGRAMMERS_DVORAK {
             bindings = <
-&rpdvpipe  &rpdv1       &rpdv2     &rpdv3    &rpdv4        &rpdv5  &tog 2                                      &mo 4   &rpdv6  &rpdv7        &rpdv8     &rpdv9       &rpdv0   &rpdvbang
-&kp TAB    &kp SEMI     &kp COMMA  &kp DOT   &kp P         &kp Y   &tog 1                                      &none   &kp F   &kp G         &kp C      &kp R        &kp L    &rpdvbslash
-&kp ESC    &kp A        &kp O      &kp E     &hml LSHFT U  &kp I   &trans  &trans  &trans      &trans  &trans  &trans  &kp D   &hmr RSHFT H  &kp T      &kp N        &kp S    &kp MINUS
-&kp LSHFT  &kp APOS     &kp Q      &kp J     &kp K         &kp X                   &trans      &trans                  &kp B   &kp M         &kp W      &kp V        &kp Z    &kp RSHFT
-&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN  &kp UP                &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT      &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
+&rpdvpipe  &rpdv1       &rpdv2     &rpdv3    &rpdv4   &rpdv5  &tog 2                                      &mo 4   &rpdv6  &rpdv7    &rpdv8     &rpdv9       &rpdv0   &rpdvbang
+&kp TAB    &kp SEMI     &kp COMMA  &kp DOT   &kp P    &kp Y   &tog 1                                      &none   &kp F   &kp G     &kp C      &kp R        &kp L    &rpdvbslash
+&kp ESC    &kp A        &kp O      &kp E     &lt 5 U  &kp I   &trans  &trans  &trans      &trans  &trans  &trans  &kp D   &lt 5 H   &kp T      &kp N        &kp S    &kp MINUS
+&kp LSHFT  &kp APOS     &kp Q      &kp J     &kp K    &kp X                   &trans      &trans                  &kp B   &kp M     &kp W      &kp V        &kp Z    &kp RSHFT
+&mo 3      &rpdvdollar  &kp CAPS   &kp DOWN  &kp UP           &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT  &kp RIGHT  &rpdvfslash  &rpdvat  &mo 3
             >;
         };
 
