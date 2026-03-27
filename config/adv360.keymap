@@ -24,9 +24,7 @@
             bindings = <&kp RET>;
         };
 
-        #endif
-	
-        /* Mod Combo (to use e.g. F13-F24 as modifiers) */
+        #endif = /* Mod Combo (to use e.g. F13-F24 as modifiers) */;
 
         mod_combo: mod_combo {
             compatible = "zmk,behavior-macro-two-param";
@@ -69,7 +67,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&leader1>;
         };
-        
+
         l1_2layer: l1_2layer {
             compatible = "zmk,behavior-macro-two-param";
             label = "L1_2LAYER";
@@ -78,8 +76,7 @@
             tap-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F16>,
-                <&macro_param_1to1>,
+                <&kp F16 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER &macro_param_2to1>,
                 <&macro_tap>,
@@ -88,7 +85,8 @@
                 <&macro_param_1to1>,
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
-                <&macro_release &kp F16>;
+                <&macro_release>,
+                <&kp F16>;
         };
 
         /* Urob's Timeless Homerow Mods */
@@ -306,7 +304,7 @@
 &kp TAB    &kp Q      &kp W     &kp E     &kp R         &kp T   &tog 1                                                               &none        &kp Y   &kp U         &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &hml LSHFT F  &kp G   &kp F23        &kp LCTRL    &kp LALT      &kp LGUI   &l1_mt RCTRL 0  &kp F24      &kp H   &hmr RSHFT J  &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V         &kp B                               &kp HOME      &kp PG_UP                               &kp N   &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP                &kp BACKSPACE  &mt DEL ESC  &kp END       &kp PG_DN  &lt 6 ENTER     &lt 5 SPACE          &kp LEFT      &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
+&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP                &kp BACKSPACE  &mt DEL ESC  &kp END       &kp PG_DN  &kp ENTER       &lt 5 SPACE          &kp LEFT      &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
@@ -330,7 +328,7 @@
             >;
         };
 
-	fn {
+        fn {
             bindings = <
 &kp F11     &kp F1            &kp F2             &kp F3            &kp F4            &kp F5            &tog 2                                      &mo 4   &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
 &kp C_MUTE  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP   &kp C_NEXT        &none                                       &none   &mod_combo F13 Y  &trans  &trans  &trans  &trans   &trans
@@ -350,23 +348,13 @@
             >;
         };
 
-	SPACE_HOLD_LAYER {
+        SPACE_HOLD_LAYER {
             bindings = <
 &trans  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP   &kp C_NEXT        &trans                                      &trans  &trans            &trans            &trans                &trans                 &trans                    &trans
 &trans  &mod_combo F14 Q  &mod_combo F14 W   &mod_combo F14 E  &mod_combo F14 R  &mod_combo F14 T  &trans                                      &trans  &mod_combo F14 Y  &mod_combo F14 U  &mod_combo F14 I      &mod_combo F14 O       &mod_combo F14 P          &trans
 &trans  &mod_combo F14 A  &mod_combo F14 S   &mod_combo F14 D  &mod_combo F14 F  &mod_combo F14 G  &trans  &trans  &trans      &trans  &trans  &trans  &mod_combo F14 H  &mod_combo F14 J  &mod_combo F14 K      &mod_combo F14 L       &mod_combo F14 SEMICOLON  &trans
 &trans  &mod_combo F14 Z  &mod_combo F14 X   &mod_combo F14 C  &mod_combo F14 V  &mod_combo F14 B                  &trans      &trans                  &mod_combo F14 N  &mod_combo F14 M  &mod_combo F14 COMMA  &mod_combo F14 PERIOD  &mod_combo F14 SLASH      &trans
 &trans  &trans            &trans             &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans            &trans                &trans                 &trans                    &trans
-            >;
-        };
-
-        ENTER_HOLD_LAYER {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
