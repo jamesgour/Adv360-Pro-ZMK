@@ -127,6 +127,34 @@
             hold-trigger-on-release;
         };
 
+        /* Thumb Cluster Shift Mods (Based on Urob) */
+
+        tsl: thumb_shift_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_SHIFT_LEFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <KEYS_R>;
+            hold-trigger-on-release;
+        };
+
+        tsr: thumb_shift_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_SHIFT_RIGHT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <KEYS_L>;
+            hold-trigger-on-release;
+        };
+
         /* Real Programmer's Dvorak Mod Morphs */
 
         rpdvdollar: rpdvdollar {
