@@ -335,11 +335,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4   &kp N5  &tog 2                                                               &mo 4      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R    &kp T   &tog 1                                                               &none      &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &lt 5 F  &kp G   &kp F23        &kp LCTRL    &kp LALT      &kp LGUI   &l1_mt RCTRL 0  &alt_tab   &kp H   &lt 5 J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V    &kp B                               &kp HOME      &kp PG_UP                             &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP           &kp BACKSPACE  &mt DEL ESC  &kp END       &kp PG_DN  &kp ENTER       &kp SPACE          &kp LEFT  &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4   &kp N5  &tog 2                                                                    &mo 4             &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R    &kp T   &tog 1                                                                    &none             &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &lt 5 F  &kp G   &kp F23               &kp LCTRL  &kp LALT      &kp LGUI   &l1_mt RCTRL 0  &alt_tab          &kp H   &lt 5 J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V    &kp B                                    &kp HOME      &kp PG_UP                                    &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 3      &kp GRAVE  &kp CAPS  &kp DOWN  &kp UP           &tsl LSHFT BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER       &tsr RSHFT SPACE          &kp LEFT  &kp RIGHT  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
