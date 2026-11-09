@@ -105,6 +105,17 @@
                 <&kp LALT>;
         };
 
+        /* Generic Tap-Preferred Hold-Tap */
+        tp: tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+        };
+
         /* Urob's Timeless Homerow Mods */
         /* https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods */
 
